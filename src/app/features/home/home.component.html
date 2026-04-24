@@ -1,0 +1,129 @@
+
+
+
+<nav class="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-b border-default">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="https://flowbite.com/docs/images/logo.svg" class="h-7" alt="Flowbite Logo" />
+      <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Flowbite</span>
+  </a>
+  <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <button type="button" class="flex text-sm bg-neutral-primary rounded-full md:me-0 focus:ring-4 focus:ring-neutral-tertiary" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
+        <span class="sr-only">Open user menu</span>
+        <img class="w-8 h-8 rounded-full cursor-pointer" src="/assets/default-profile.png" alt="user photo">
+      </button>
+      <!-- Dropdown menu -->
+      <div class="z-50 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44" id="user-dropdown">
+        <div class="px-4 py-3 text-sm border-b border-default">
+          <span class="block text-heading font-medium">user name</span>
+        </div>
+        <ul class="p-2 text-sm text-body font-medium" aria-labelledby="user-menu-button">
+          
+          <li>
+            <a  class="inline-flex items-center cursor-pointer w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+              Settings</a>
+          </li>
+          <li>
+            <a (click)="LogOut()"  class="inline-flex cursor-pointer items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+              Sign out</a>
+          </li>
+        </ul>
+      </div>
+      <button data-collapse-toggle="navbar-user" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-user" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+      </button>
+  </div>
+  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+    <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+      <li>
+        <a href="#" class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0" aria-current="page">Home</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Services</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Pricing</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+
+
+
+
+
+<!-- Hero Section -->
+<section class="min-h-screen flex items-center bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+  
+      <!-- Left Content -->
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+          Build Modern Apps with Angular 21 🚀
+        </h1>
+  
+        <p class="mt-4 text-lg text-white/80">
+          Create fast, scalable and beautiful web applications using Angular and Tailwind CSS.
+        </p>
+  
+        <div class="mt-6 flex gap-4">
+          <a routerLink="/register"
+             class="px-6 py-3 bg-white text-indigo-600 rounded-xl font-semibold hover:bg-gray-100 transition">
+            Get Started
+          </a>
+  
+          <a routerLink="/login"
+             class="px-6 py-3 border border-white rounded-xl hover:bg-white hover:text-indigo-600 transition">
+            Login
+          </a>
+        </div>
+      </div>
+  
+      <!-- Right Image / Card -->
+      <div class="bg-white/10 backdrop-blur-lg p-6 rounded-2xl shadow-xl">
+        <div class="grid gap-4">
+          <div class="p-4 bg-white/20 rounded-xl">⚡ Fast Performance</div>
+          <div class="p-4 bg-white/20 rounded-xl">🔒 Secure Auth</div>
+          <div class="p-4 bg-white/20 rounded-xl">📦 Scalable Architecture</div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  <!-- Features Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+  
+      <h2 class="text-3xl font-bold text-gray-800">Why Angular + Tailwind?</h2>
+      <p class="mt-2 text-gray-500">A modern stack for professional apps</p>
+  
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+  
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">Component Driven</h3>
+          <p class="text-gray-500 mt-2">Reusable and scalable architecture.</p>
+        </div>
+  
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">Fast UI Design</h3>
+          <p class="text-gray-500 mt-2">Tailwind makes styling super fast.</p>
+        </div>
+  
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="font-semibold text-lg">Production Ready</h3>
+          <p class="text-gray-500 mt-2">Used in real enterprise apps.</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
