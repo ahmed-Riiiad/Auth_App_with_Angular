@@ -5,7 +5,7 @@ import { ToastrService } from 'ngx-toastr';
 
 export const errorInterceptor: HttpInterceptorFn = (req, next) => {
   const  toastrService = inject(ToastrService)
-  console.log('Interceptor triggered'); // 👈 هنا أول مكان
+  console.log('Interceptor triggered'); 
   return next(req).pipe(
     catchError((err)=>{
       console.log('Error caught in interceptor');
